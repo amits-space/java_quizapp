@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroPastel Quiz Portal</title>
+    <!-- Google Fonts: Outfit for headings, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-light">
+    <!-- Glassmorphic background blur shapes -->
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+    <div class="bg-shape bg-shape-3"></div>
+
+    <div class="app-container">
+        <!-- HEADER -->
+        <header class="app-header">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <h1 class="logo-text">Mind<span class="highlight">Glow</span></h1>
+            </div>
+            <div class="header-controls">
+                <span id="player-badge" class="player-badge hidden">
+                    <span class="badge-icon">👤</span>
+                    <span id="badge-name">Guest</span>
+                </span>
+                <button id="theme-toggle-btn" class="icon-btn" title="Toggle Light/Dark Mode" aria-label="Toggle Theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- MAIN SPA CONTENT VIEWPORT -->
+        <main class="app-viewport">
+            
+            <!-- SCREEN 1: WELCOME / NAME ENTRY -->
+            <section id="welcome-screen" class="screen active">
+                <div class="card welcome-card">
+                    <div class="welcome-header">
+                        <h2>Welcome, Mind Gamer!</h2>
+                        <p>Enter your nickname to step into the arena of knowledge.</p>
+                    </div>
+                    <form id="name-form" class="name-entry-form" onsubmit="return false;">
+                        <div class="input-group">
+                            <label for="username-input" class="sr-only">Nickname</label>
+                            <input 
+                                type="text" 
+                                id="username-input" 
+                                placeholder="Enter a cool nickname..." 
+                                maxlength="20" 
+                                required
+                                autocomplete="off"
+                            >
+                            <span class="input-focus-line"></span>
+                        </div>
+                        <div id="name-error" class="error-message hidden"></div>
+                        <button type="submit" id="enter-lobby-btn" class="btn btn-primary btn-large">
+                            <span>Enter Lobby</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- SCREEN 2: LOBBY -->
+            <section id="lobby-screen" class="screen">
+                <div class="lobby-container">
+                    <div class="lobby-intro">
+                        <h2>Ready to play, <span id="lobby-greeting-name" class="highlight">Gamer</span>?</h2>
+                        <p>Select your next step in the portal. Aim for the leaderboard!</p>
+                    </div>
+                    
+                    <div class="lobby-menu">
+                        <button id="lobby-play-btn" class="btn btn-menu btn-play">
+                            <span class="menu-icon">🎮</span>
+                            <span class="menu-text">Play Quiz</span>
+                            <span class="menu-sub">Choose category and mode</span>
+                        </button>
+                        
+                        <button id="lobby-leaderboard-btn" class="btn btn-menu btn-leaderboard">
+                            <span class="menu-icon">🏆</span>
+                            <span class="menu-text">Leaderboard</span>
+                            <span class="menu-sub">View top persistent scores</span>
+                        </button>
+
+                        <button id="lobby-logout-btn" class="btn btn-menu btn-logout">
+                            <span class="menu-icon">🚪</span>
+                            <span class="menu-text">Change Nickname</span>
+                            <span class="menu-sub">Clear session identity</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCREEN 3: CATEGORY SELECTION -->
+            <section id="category-screen" class="screen">
+                <div class="screen-header">
+                    <button class="back-btn" onclick="showScreen('lobby-screen')">← Back</button>
+                    <h2>Select Category</h2>
+                    <p>Pick a topic to challenge your knowledge pool</p>
+                </div>
+                
+                <div class="category-grid" id="category-list">
+                    <!-- Categories will be rendered dynamically, fallback static representation included -->
+                    <button class="category-card" data-category="Bollywood">
+                        <span class="cat-icon">🎬</span>
+                        <h3>Bollywood</h3>
+                        <p>Pop cinema & blockbusters</p>
+                    </button>
+                    <button class="category-card" data-category="Hollywood">
+                        <span class="cat-icon">🍿</span>
+                        <h3>Hollywood</h3>
+                        <p>Popular global franchises</p>
+                    </button>
+                    <button class="category-card" data-category="Aviation">
+                        <span class="cat-icon">✈️</span>
+                        <h3>Aviation</h3>
+                        <p>Aircrafts, history & tech</p>
+                    </button>
+                    <button class="category-card" data-category="Bollywood Music">
+                        <span class="cat-icon">🎵</span>
+                        <h3>Bollywood Music</h3>
+                        <p>1990s-2020s mainstreams</p>
+                    </button>
+                    <button class="category-card" data-category="Technology">
+                        <span class="cat-icon">💻</span>
+                        <h3>Technology</h3>
+                        <p>Computing, AI & history</p>
+                    </button>
+                    <button class="category-card" data-category="Gaming">
+                        <span class="cat-icon">🕹️</span>
+                        <h3>Gaming</h3>
+                        <p>Video games & franchises</p>
+                    </button>
+                </div>
+            </section>
+
+            <!-- SCREEN 4: MODE SELECTOR -->
+            <section id="mode-screen" class="screen">
+                <div class="screen-header">
+                    <button class="back-btn" onclick="showScreen('category-screen')">← Back</button>
+                    <h2>Select Game Mode</h2>
+                    <p>Choose your playstyle for <span id="selected-category-label" class="highlight">Category</span></p>
+                </div>
+
+                <div class="modes-container">
+                    <!-- CLASSIC MODE -->
+                    <div class="mode-card" id="mode-classic-btn">
+                        <div class="mode-badge">Relaxed</div>
+                        <span class="mode-icon">📜</span>
+                        <h3>Classic Mode</h3>
+                        <p class="mode-desc">Answer 10 curated multiple-choice questions at your own pace. Ideal for thorough thinkers.</p>
+                        <div class="mode-rules">
+                            <span>✅ 10 MCQ Questions</span>
+                            <span>✅ +4 points for Correct</span>
+                            <span>✅ -1 point for Wrong</span>
+                            <span>✅ 0 points for Skipped (No penalty!)</span>
+                        </div>
+                        <button class="btn btn-primary">Start Classic</button>
+                    </div>
+
+                    <!-- RAPID FIRE MODE -->
+                    <div class="mode-card featured" id="mode-rapid-btn">
+                        <div class="mode-badge heat">Intense</div>
+                        <span class="mode-icon">⏱️</span>
+                        <h3>Rapid Fire</h3>
+                        <p class="mode-desc">Race against a strict 120-second countdown. Free-text inputs require speed and precision!</p>
+                        <div class="mode-rules">
+                            <span>🔥 Unlimited questions in 120s</span>
+                            <span>🔥 +4 points for Correct</span>
+                            <span>🔥 -1 point for Wrong</span>
+                            <span>⚠️ -1 point for Skipped (Warning!)</span>
+                        </div>
+                        <button class="btn btn-accent">Start Blitz</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCREEN 5: GAME ENGINE UI -->
+            <section id="game-screen" class="screen">
+                <!-- Top Status Bar -->
+                <div class="game-status-bar">
+                    <div class="status-item">
+                        <span class="status-label">MODE</span>
+                        <span id="game-mode-badge" class="badge">Classic</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">PROGRESS</span>
+                        <span id="game-progress-text" class="status-val">1 / 10</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">SCORE</span>
+                        <span id="game-score-text" class="status-val highlight">0</span>
+                    </div>
+                    <div class="status-item timer-item hidden" id="game-timer-container">
+                        <span class="status-label">TIME</span>
+                        <span id="game-timer-text" class="status-val timer-danger">120s</span>
+                    </div>
+                </div>
+
+                <!-- Timer Progress Bar for Rapid Fire -->
+                <div class="timer-progress-track hidden" id="game-timer-track">
+                    <div class="timer-progress-bar" id="game-timer-bar"></div>
+                </div>
+
+                <!-- Main Game Board -->
+                <div class="card game-card">
+                    <!-- Category Stamp -->
+                    <div id="game-category-stamp" class="game-category-stamp">Bollywood</div>
+
+                    <!-- Question text -->
+                    <div class="question-container">
+                        <h2 id="game-question-text">Who directed the Bollywood blockbuster film '3 Idiots' starring Aamir Khan?</h2>
+                    </div>
+
+                    <!-- Input Interface: MCQ Options for Classic Mode -->
+                    <div class="options-container" id="game-options-container">
+                        <button class="option-btn" data-option="A">
+                            <span class="option-letter">A</span>
+                            <span class="option-text">Rajkumar Hirani</span>
+                        </button>
+                        <button class="option-btn" data-option="B">
+                            <span class="option-letter">B</span>
+                            <span class="option-text">Karan Johar</span>
+                        </button>
+                        <button class="option-btn" data-option="C">
+                            <span class="option-letter">C</span>
+                            <span class="option-text">Sanjay Leela Bhansali</span>
+                        </button>
+                    </div>
+
+                    <!-- Input Interface: Free Text Box for Rapid Fire Mode -->
+                    <div class="text-input-container hidden" id="game-text-input-container">
+                        <form id="rapid-answer-form" onsubmit="return false;">
+                            <div class="input-group">
+                                <input 
+                                    type="text" 
+                                    id="rapid-answer-input" 
+                                    placeholder="Type your answer here..." 
+                                    autocomplete="off"
+                                    autofocus
+                                >
+                                <button type="submit" id="rapid-submit-btn" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Skip & Exit Controls -->
+                    <div class="game-control-bar">
+                        <button id="game-quit-btn" class="btn btn-outline btn-danger">Quit Game</button>
+                        <button id="game-skip-btn" class="btn btn-outline">Skip Question</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCREEN 6: RESULTS / GAME OVER -->
+            <section id="result-screen" class="screen">
+                <canvas id="confetti-canvas" class="confetti-canvas"></canvas>
+                <div class="card result-card">
+                    <div class="result-celebration">
+                        <span class="trophy-emoji">🏆</span>
+                        <h2>Quiz Completed!</h2>
+                        <p>Fabulous effort. Here are your portal statistics:</p>
+                    </div>
+
+                    <div class="result-stats">
+                        <div class="stat-box">
+                            <span class="stat-label">Player</span>
+                            <span id="result-player" class="stat-val">Player</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Final Score</span>
+                            <span id="result-score" class="stat-val highlight">0</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Game Mode</span>
+                            <span id="result-mode" class="stat-val">Classic</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Category</span>
+                            <span id="result-category" class="stat-val">Bollywood</span>
+                        </div>
+                    </div>
+
+                    <div class="result-actions">
+                        <button class="btn btn-primary" onclick="showScreen('category-screen')">Play Again</button>
+                        <button class="btn btn-accent" onclick="fetchAndShowLeaderboard()">View Leaderboard</button>
+                        <button class="btn btn-outline" onclick="showScreen('lobby-screen')">Lobby Home</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCREEN 7: LEADERBOARD -->
+            <section id="leaderboard-screen" class="screen">
+                <div class="screen-header">
+                    <button class="back-btn" onclick="showScreen('lobby-screen')">← Back to Lobby</button>
+                    <h2>Global Leaderboard</h2>
+                    <p>Behold the top mind gamers in the portal system</p>
+                </div>
+
+                <div class="card leaderboard-card">
+                    <div class="table-responsive">
+                        <table class="leaderboard-table">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Gamer</th>
+                                    <th>Score</th>
+                                    <th>Mode</th>
+                                    <th>Category</th>
+                                    <th>Date & Time (IST)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="leaderboard-data">
+                                <!-- Leaderboard rows rendered dynamically -->
+                                <tr>
+                                    <td colspan="6" class="table-loading">Loading top scores...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="app-footer">
+            <p>© 2026 MindGlow Quiz Portal • Bengaluru, India (IST)</p>
+        </footer>
+    </div>
+
+    <!-- MODAL POPUPS FOR COMPLIANCE -->
+    <!-- 1. SKIP WARNING MODAL FOR RAPID FIRE -->
+    <div id="skip-warning-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <span class="modal-icon">⚠️</span>
+            <h3>Deduction Warning</h3>
+            <p>Skipping this question in Rapid Fire will deduct <strong class="danger">-1 point</strong> from your active score. Are you sure you want to pass?</p>
+            <div class="modal-buttons">
+                <button id="skip-confirm-btn" class="btn btn-danger">Yes, Skip (-1)</button>
+                <button id="skip-cancel-btn" class="btn btn-outline">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. QUIT CONFIRMATION MODAL -->
+    <div id="quit-confirm-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <span class="modal-icon">🚪</span>
+            <h3>Quit Active Game?</h3>
+            <p>Are you sure you want to quit the quiz? Your current accumulated score will be persisted, and this session will end.</p>
+            <div class="modal-buttons">
+                <button id="quit-confirm-btn" class="btn btn-danger">Yes, Submit & Quit</button>
+                <button id="quit-cancel-btn" class="btn btn-outline">Resume Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. FEEDBACK TOAST (Micro-notification) -->
+    <div id="feedback-toast" class="toast hidden">
+        <span id="toast-icon">✅</span>
+        <span id="toast-msg">Correct! +4 points</span>
+    </div>
+
+    <!-- JavaScript App Code -->
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1082 @@
+[
+  {
+    "id": 1,
+    "category": "Bollywood",
+    "question": "Who directed '3 Idiots'?",
+    "answer": "Rajkumar Hirani",
+    "options": ["Rajkumar Hirani", "Karan Johar", "Sanjay Leela Bhansali"],
+    "difficulty": "easy",
+    "tags": ["directors", "classics"]
+  },
+  {
+    "id": 2,
+    "category": "Bollywood",
+    "question": "Which film starred Shah Rukh Khan and Kajol in 1995?",
+    "answer": "Dilwale Dulhania Le Jayenge",
+    "options": ["Dilwale Dulhania Le Jayenge", "Kuch Kuch Hota Hai", "Baazigar"],
+    "difficulty": "easy",
+    "tags": ["romance", "srk"]
+  },
+  {
+    "id": 3,
+    "category": "Bollywood",
+    "question": "Which movie features the song 'Chaiyya Chaiyya'?",
+    "answer": "Dil Se",
+    "options": ["Dil Se", "Taal", "Swades"],
+    "difficulty": "medium",
+    "tags": ["music", "srk"]
+  },
+  {
+    "id": 4,
+    "category": "Bollywood",
+    "question": "Who played the lead role of Sardar Khan in 'Gangs of Wasseypur - Part 1'?",
+    "answer": "Manoj Bajpayee",
+    "options": ["Manoj Bajpayee", "Nawazuddin Siddiqui", "Pankaj Tripathi"],
+    "difficulty": "medium",
+    "tags": ["action", "cult-classic"]
+  },
+  {
+    "id": 5,
+    "category": "Bollywood",
+    "question": "Which Bollywood film was nominated for Best Foreign Language Film at the 2002 Oscars?",
+    "answer": "Lagaan",
+    "options": ["Lagaan", "Devdas", "Dil Chahta Hai"],
+    "difficulty": "easy",
+    "tags": ["oscars", "sports"]
+  },
+  {
+    "id": 6,
+    "category": "Bollywood",
+    "question": "In 'Sholay', what was the name of Basanti's horse?",
+    "answer": "Dhanno",
+    "options": ["Dhanno", "Basanti", "Bijli"],
+    "difficulty": "easy",
+    "tags": ["classic", "trivia"]
+  },
+  {
+    "id": 7,
+    "category": "Bollywood",
+    "question": "Who played the character of Kabir Singh in the 2019 film?",
+    "answer": "Shahid Kapoor",
+    "options": ["Shahid Kapoor", "Ranbir Kapoor", "Ranveer Singh"],
+    "difficulty": "easy",
+    "tags": ["drama", "hits"]
+  },
+  {
+    "id": 8,
+    "category": "Bollywood",
+    "question": "Which actor played the iconic role of 'Circuit' in 'Munna Bhai M.B.B.S.'?",
+    "answer": "Arshad Warsi",
+    "options": ["Arshad Warsi", "Sanjay Dutt", "Jimmy Sheirgill"],
+    "difficulty": "easy",
+    "tags": ["comedy", "classic"]
+  },
+  {
+    "id": 9,
+    "category": "Bollywood",
+    "question": "What was Deepika Padukone's debut movie in Bollywood?",
+    "answer": "Om Shanti Om",
+    "options": ["Om Shanti Om", "Bachna Ae Haseeno", "Love Aaj Kal"],
+    "difficulty": "easy",
+    "tags": ["debut", "hits"]
+  },
+  {
+    "id": 10,
+    "category": "Bollywood",
+    "question": "Which actress portrayed the mathematical genius in 'Shakuntala Devi' (2020)?",
+    "answer": "Vidya Balan",
+    "options": ["Vidya Balan", "Alia Bhatt", "Kangana Ranaut"],
+    "difficulty": "medium",
+    "tags": ["biopic", "female-lead"]
+  },
+  {
+    "id": 11,
+    "category": "Bollywood",
+    "question": "Who directed the movie 'Gully Boy'?",
+    "answer": "Zoya Akhtar",
+    "options": ["Zoya Akhtar", "Anurag Kashyap", "Farhan Akhtar"],
+    "difficulty": "medium",
+    "tags": ["directors", "music"]
+  },
+  {
+    "id": 12,
+    "category": "Bollywood",
+    "question": "Which Bollywood movie was inspired by the life of ISRO scientist Nambi Narayanan?",
+    "answer": "Rocketry: The Nambi Effect",
+    "options": ["Rocketry: The Nambi Effect", "Mission Mangal", "Swades"],
+    "difficulty": "medium",
+    "tags": ["biopic", "science"]
+  },
+  {
+    "id": 13,
+    "category": "Bollywood",
+    "question": "In '3 Idiots', what is Rancho's real name?",
+    "answer": "Phunsukh Wangdu",
+    "options": ["Phunsukh Wangdu", "Ranchoddas Shamaldas Chanchad", "Farhan Qureshi"],
+    "difficulty": "easy",
+    "tags": ["trivia", "classics"]
+  },
+  {
+    "id": 14,
+    "category": "Bollywood",
+    "question": "Who directed the epic historical drama 'Mughal-e-Azam'?",
+    "answer": "K. Asif",
+    "options": ["K. Asif", "Guru Dutt", "Raj Kapoor"],
+    "difficulty": "hard",
+    "tags": ["history", "classic"]
+  },
+  {
+    "id": 15,
+    "category": "Bollywood",
+    "question": "Which actress portrayed the brave flight attendant in 'Neerja' (2016)?",
+    "answer": "Sonam Kapoor",
+    "options": ["Sonam Kapoor", "Priyanka Chopra", "Anushka Sharma"],
+    "difficulty": "easy",
+    "tags": ["biopic", "drama"]
+  },
+  {
+    "id": 16,
+    "category": "Bollywood",
+    "question": "Which film starred Aamir Khan as a dyslexic child's art teacher?",
+    "answer": "Taare Zameen Par",
+    "options": ["Taare Zameen Par", "3 Idiots", "Dangal"],
+    "difficulty": "easy",
+    "tags": ["drama", "classic"]
+  },
+  {
+    "id": 17,
+    "category": "Bollywood",
+    "question": "Who played the role of Milkha Singh in the biopic 'Bhaag Milkha Bhaag'?",
+    "answer": "Farhan Akhtar",
+    "options": ["Farhan Akhtar", "Ranbir Kapoor", "Vicky Kaushal"],
+    "difficulty": "easy",
+    "tags": ["biopic", "sports"]
+  },
+  {
+    "id": 18,
+    "category": "Bollywood",
+    "question": "Which movie features the fictional crime-lord character 'Faizal Khan'?",
+    "answer": "Gangs of Wasseypur",
+    "options": ["Gangs of Wasseypur", "Sacred Games", "Mirzapur"],
+    "difficulty": "medium",
+    "tags": ["action", "cult-classic"]
+  },
+  {
+    "id": 19,
+    "category": "Bollywood",
+    "question": "Which Bollywood film has the famous dialogue 'Mogambo khush hua'?",
+    "answer": "Mr. India",
+    "options": ["Mr. India", "Shaan", "Karma"],
+    "difficulty": "easy",
+    "tags": ["dialogue", "classic"]
+  },
+  {
+    "id": 20,
+    "category": "Bollywood",
+    "question": "Who played the deaf-mute female lead alongside Ranbir Kapoor in 'Barfi!'?",
+    "answer": "Priyanka Chopra",
+    "options": ["Priyanka Chopra", "Ileana D'Cruz", "Katrina Kaif"],
+    "difficulty": "medium",
+    "tags": ["romance", "acting"]
+  },
+  {
+    "id": 21,
+    "category": "Hollywood",
+    "question": "Who directed the sci-fi epic 'Interstellar'?",
+    "answer": "Christopher Nolan",
+    "options": ["Christopher Nolan", "Steven Spielberg", "Denis Villeneuve"],
+    "difficulty": "easy",
+    "tags": ["sci-fi", "directors"]
+  },
+  {
+    "id": 22,
+    "category": "Hollywood",
+    "question": "What is the highest-grossing film of all time unadjusted for inflation?",
+    "answer": "Avatar",
+    "options": ["Avatar", "Avengers: Endgame", "Titanic"],
+    "difficulty": "easy",
+    "tags": ["records", "box-office"]
+  },
+  {
+    "id": 23,
+    "category": "Hollywood",
+    "question": "Which actor played Iron Man in the Marvel Cinematic Universe?",
+    "answer": "Robert Downey Jr.",
+    "options": ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo"],
+    "difficulty": "easy",
+    "tags": ["marvel", "acting"]
+  },
+  {
+    "id": 24,
+    "category": "Hollywood",
+    "question": "In 'The Matrix', what color pill does Neo take?",
+    "answer": "Red",
+    "options": ["Red", "Blue", "Green"],
+    "difficulty": "easy",
+    "tags": ["sci-fi", "matrix"]
+  },
+  {
+    "id": 25,
+    "category": "Hollywood",
+    "question": "Who played Jack Dawson in the 1997 film 'Titanic'?",
+    "answer": "Leonardo DiCaprio",
+    "options": ["Leonardo DiCaprio", "Brad Pitt", "Johnny Depp"],
+    "difficulty": "easy",
+    "tags": ["romance", "acting"]
+  },
+  {
+    "id": 26,
+    "category": "Hollywood",
+    "question": "Which movie features the fictional African nation of Wakanda?",
+    "answer": "Black Panther",
+    "options": ["Black Panther", "The Lion King", "Coming to America"],
+    "difficulty": "easy",
+    "tags": ["marvel", "fiction"]
+  },
+  {
+    "id": 27,
+    "category": "Hollywood",
+    "question": "Who directed the 'Jurassic Park' movie released in 1993?",
+    "answer": "Steven Spielberg",
+    "options": ["Steven Spielberg", "James Cameron", "George Lucas"],
+    "difficulty": "easy",
+    "tags": ["classic", "dinosaurs"]
+  },
+  {
+    "id": 28,
+    "category": "Hollywood",
+    "question": "Which popular movie franchise features a character named Jack Sparrow?",
+    "answer": "Pirates of the Caribbean",
+    "options": ["Pirates of the Caribbean", "Indiana Jones", "The Mummy"],
+    "difficulty": "easy",
+    "tags": ["adventure", "disney"]
+  },
+  {
+    "id": 29,
+    "category": "Hollywood",
+    "question": "What is the name of the dark, rainy city where Batman lives?",
+    "answer": "Gotham City",
+    "options": ["Gotham City", "Metropolis", "Star City"],
+    "difficulty": "easy",
+    "tags": ["dc", "comics"]
+  },
+  {
+    "id": 30,
+    "category": "Hollywood",
+    "question": "Who played the Joker in the 2008 film 'The Dark Knight'?",
+    "answer": "Heath Ledger",
+    "options": ["Heath Ledger", "Joaquin Phoenix", "Jared Leto"],
+    "difficulty": "easy",
+    "tags": ["acting", "oscars"]
+  },
+  {
+    "id": 31,
+    "category": "Hollywood",
+    "question": "In 'The Lord of the Rings', what is the name of the main hobbit who destroys the Ring?",
+    "answer": "Frodo Baggins",
+    "options": ["Frodo Baggins", "Samwise Gamgee", "Bilbo Baggins"],
+    "difficulty": "easy",
+    "tags": ["fantasy", "lotr"]
+  },
+  {
+    "id": 32,
+    "category": "Hollywood",
+    "question": "Which film won the Academy Award for Best Picture in 2020, becoming the first non-English film to do so?",
+    "answer": "Parasite",
+    "options": ["Parasite", "1917", "Once Upon a Time in Hollywood"],
+    "difficulty": "medium",
+    "tags": ["oscars", "thriller"]
+  },
+  {
+    "id": 33,
+    "category": "Hollywood",
+    "question": "Who voiced the character of Woody in 'Toy Story'?",
+    "answer": "Tom Hanks",
+    "options": ["Tom Hanks", "Tim Allen", "Robin Williams"],
+    "difficulty": "easy",
+    "tags": ["pixar", "voice"]
+  },
+  {
+    "id": 34,
+    "category": "Hollywood",
+    "question": "In 'Star Wars', what is the name of Han Solo's Wookiee co-pilot?",
+    "answer": "Chewbacca",
+    "options": ["Chewbacca", "C-3PO", "R2-D2"],
+    "difficulty": "easy",
+    "tags": ["sci-fi", "star-wars"]
+  },
+  {
+    "id": 35,
+    "category": "Hollywood",
+    "question": "Which actress played Hermione Granger in the 'Harry Potter' series?",
+    "answer": "Emma Watson",
+    "options": ["Emma Watson", "Keira Knightley", "Saoirse Ronan"],
+    "difficulty": "easy",
+    "tags": ["fantasy", "magic"]
+  },
+  {
+    "id": 36,
+    "category": "Hollywood",
+    "question": "What is the name of the artificial intelligence system in '2001: A Space Odyssey'?",
+    "answer": "HAL 9000",
+    "options": ["HAL 9000", "Skynet", "JARVIS"],
+    "difficulty": "medium",
+    "tags": ["sci-fi", "ai"]
+  },
+  {
+    "id": 37,
+    "category": "Hollywood",
+    "question": "Who directed 'Pulp Fiction'?",
+    "answer": "Quentin Tarantino",
+    "options": ["Quentin Tarantino", "Martin Scorsese", "Coen Brothers"],
+    "difficulty": "easy",
+    "tags": ["cult-classic", "directors"]
+  },
+  {
+    "id": 38,
+    "category": "Hollywood",
+    "question": "Which actor played Wolverine in the X-Men franchise?",
+    "answer": "Hugh Jackman",
+    "options": ["Hugh Jackman", "Christian Bale", "Tom Hardy"],
+    "difficulty": "easy",
+    "tags": ["marvel", "acting"]
+  },
+  {
+    "id": 39,
+    "category": "Hollywood",
+    "question": "What is the name of the fictional land where 'The Wizard of Oz' is set?",
+    "answer": "Oz",
+    "options": ["Oz", "Narnia", "Wonderland"],
+    "difficulty": "easy",
+    "tags": ["fantasy", "classic"]
+  },
+  {
+    "id": 40,
+    "category": "Hollywood",
+    "question": "In 'Inception', what object is Cobb's totem that tells him if he is in a dream?",
+    "answer": "Spinning top",
+    "options": ["Spinning top", "Loaded die", "Chess piece"],
+    "difficulty": "medium",
+    "tags": ["sci-fi", "inception"]
+  },
+  {
+    "id": 41,
+    "category": "Aviation",
+    "question": "What is the largest passenger aircraft in the world?",
+    "answer": "Airbus A380",
+    "options": ["Airbus A380", "Boeing 747-8", "Antonov An-225"],
+    "difficulty": "easy",
+    "tags": ["aircraft", "records"]
+  },
+  {
+    "id": 42,
+    "category": "Aviation",
+    "question": "Who were the brothers widely credited with building the world's first successful motor-operated airplane?",
+    "answer": "Wright Brothers",
+    "options": ["Wright Brothers", "Montgolfier Brothers", "Boeing Brothers"],
+    "difficulty": "easy",
+    "tags": ["history", "pioneers"]
+  },
+  {
+    "id": 43,
+    "category": "Aviation",
+    "question": "What is the name of India's national carrier founded by J.R.D. Tata?",
+    "answer": "Air India",
+    "options": ["Air India", "IndiGo", "SpiceJet"],
+    "difficulty": "easy",
+    "tags": ["india", "airlines"]
+  },
+  {
+    "id": 44,
+    "category": "Aviation",
+    "question": "What device on an aircraft measures altitude above a given datum?",
+    "answer": "Altimeter",
+    "options": ["Altimeter", "Speedometer", "Gyroscope"],
+    "difficulty": "easy",
+    "tags": ["instruments", "tech"]
+  },
+  {
+    "id": 45,
+    "category": "Aviation",
+    "question": "Which atmospheric layer do commercial jet airliners typically cruise in to avoid weather?",
+    "answer": "Stratosphere",
+    "options": ["Stratosphere", "Troposphere", "Mesosphere"],
+    "difficulty": "medium",
+    "tags": ["atmosphere", "meteorology"]
+  },
+  {
+    "id": 46,
+    "category": "Aviation",
+    "question": "What does the term 'UAV' stand for in modern aviation?",
+    "answer": "Unmanned Aerial Vehicle",
+    "options": ["Unmanned Aerial Vehicle", "United Aviation Vehicle", "Universal Altitude Velocity"],
+    "difficulty": "easy",
+    "tags": ["abbreviations", "drones"]
+  },
+  {
+    "id": 47,
+    "category": "Aviation",
+    "question": "What color are the flight data recorders (popularly called 'black boxes') on commercial airplanes?",
+    "answer": "Orange",
+    "options": ["Orange", "Black", "Yellow"],
+    "difficulty": "easy",
+    "tags": ["safety", "trivia"]
+  },
+  {
+    "id": 48,
+    "category": "Aviation",
+    "question": "Which airport code corresponds to London Heathrow Airport?",
+    "answer": "LHR",
+    "options": ["LHR", "LGW", "LGX"],
+    "difficulty": "easy",
+    "tags": ["airports", "codes"]
+  },
+  {
+    "id": 49,
+    "category": "Aviation",
+    "question": "What is the primary force that overcomes the weight of an aircraft to keep it in the air?",
+    "answer": "Lift",
+    "options": ["Lift", "Thrust", "Drag"],
+    "difficulty": "easy",
+    "tags": ["physics", "aerodynamics"]
+  },
+  {
+    "id": 50,
+    "category": "Aviation",
+    "question": "Who was the first female aviator to fly solo across the Atlantic Ocean?",
+    "answer": "Amelia Earhart",
+    "options": ["Amelia Earhart", "Bessie Coleman", "Harriet Quimby"],
+    "difficulty": "easy",
+    "tags": ["history", "female-pioneers"]
+  },
+  {
+    "id": 51,
+    "category": "Aviation",
+    "question": "What is the name of the iconic supersonic passenger airliner that operated until 2003?",
+    "answer": "Concorde",
+    "options": ["Concorde", "Tu-144", "Boeing 2707"],
+    "difficulty": "easy",
+    "tags": ["supersonic", "history"]
+  },
+  {
+    "id": 52,
+    "category": "Aviation",
+    "question": "Which manufacturer produces the '737 Max' series of aircraft?",
+    "answer": "Boeing",
+    "options": ["Boeing", "Airbus", "Bombardier"],
+    "difficulty": "easy",
+    "tags": ["manufacturers", "commercial"]
+  },
+  {
+    "id": 53,
+    "category": "Aviation",
+    "question": "What does the abbreviation 'ATC' stand for in aviation?",
+    "answer": "Air Traffic Control",
+    "options": ["Air Traffic Control", "Automated Takeoff Control", "Aviation Technical Center"],
+    "difficulty": "easy",
+    "tags": ["abbreviations", "traffic"]
+  },
+  {
+    "id": 54,
+    "category": "Aviation",
+    "question": "What is the name of the angle between the wing chord line and the relative wind?",
+    "answer": "Angle of attack",
+    "options": ["Angle of attack", "Dihedral angle", "Sweep angle"],
+    "difficulty": "medium",
+    "tags": ["physics", "aerodynamics"]
+  },
+  {
+    "id": 55,
+    "category": "Aviation",
+    "question": "What is the speed of sound at sea level under standard conditions (in km/h)?",
+    "answer": "1225",
+    "options": ["1225", "1000", "1500"],
+    "difficulty": "hard",
+    "tags": ["physics", "speed"]
+  },
+  {
+    "id": 56,
+    "category": "Aviation",
+    "question": "Which instrument in the cockpit indicates the rate of climb or descent?",
+    "answer": "Vertical Speed Indicator",
+    "options": ["Vertical Speed Indicator", "Attitude Indicator", "Turn Coordinator"],
+    "difficulty": "medium",
+    "tags": ["instruments", "cockpit"]
+  },
+  {
+    "id": 57,
+    "category": "Aviation",
+    "question": "What type of jet engine uses a fan to push bypass air around the core, powering modern airliners?",
+    "answer": "Turbofan",
+    "options": ["Turbofan", "Turbojet", "Turboprop"],
+    "difficulty": "medium",
+    "tags": ["engines", "technology"]
+  },
+  {
+    "id": 58,
+    "category": "Aviation",
+    "question": "What is the term for the central body of an airplane where passengers and cargo are carried?",
+    "answer": "Fuselage",
+    "options": ["Fuselage", "Empennage", "Nacelle"],
+    "difficulty": "easy",
+    "tags": ["components", "structure"]
+  },
+  {
+    "id": 59,
+    "category": "Aviation",
+    "question": "Which British manufacturer built the famous Spitfire fighter aircraft used during WWII?",
+    "answer": "Supermarine",
+    "options": ["Supermarine", "Hawker", "Avro"],
+    "difficulty": "hard",
+    "tags": ["history", "warbirds"]
+  },
+  {
+    "id": 60,
+    "category": "Aviation",
+    "question": "What is the international standard emergency radio frequency (in MHz) for aviation distress?",
+    "answer": "121.5",
+    "options": ["121.5", "243.0", "156.8"],
+    "difficulty": "hard",
+    "tags": ["radio", "safety"]
+  },
+  {
+    "id": 61,
+    "category": "Bollywood Music",
+    "question": "Who sang the iconic song 'Chaiyya Chaiyya' alongside Sukhwinder Singh?",
+    "answer": "Sapna Awasthi",
+    "options": ["Sapna Awasthi", "Alka Yagnik", "Kavita Krishnamurthy"],
+    "difficulty": "medium",
+    "tags": ["classic", "singers"]
+  },
+  {
+    "id": 62,
+    "category": "Bollywood Music",
+    "question": "Which music director won two Academy Awards for his work on 'Slumdog Millionaire'?",
+    "answer": "A. R. Rahman",
+    "options": ["A. R. Rahman", "Pritam", "Sanjay Leela Bhansali"],
+    "difficulty": "easy",
+    "tags": ["oscars", "composers"]
+  },
+  {
+    "id": 63,
+    "category": "Bollywood Music",
+    "question": "Who is widely revered as the 'Nightingale of India' in playback singing?",
+    "answer": "Lata Mangeshkar",
+    "options": ["Lata Mangeshkar", "Asha Bhosle", "Shreya Ghoshal"],
+    "difficulty": "easy",
+    "tags": ["legends", "female-singers"]
+  },
+  {
+    "id": 64,
+    "category": "Bollywood Music",
+    "question": "Which singer sang the hit romantic track 'Tum Hi Ho' from 'Aashiqui 2'?",
+    "answer": "Arijit Singh",
+    "options": ["Arijit Singh", "Atif Aslam", "Armaan Malik"],
+    "difficulty": "easy",
+    "tags": ["romance", "hits"]
+  },
+  {
+    "id": 65,
+    "category": "Bollywood Music",
+    "question": "Who sang the male vocals for 'Tujhe Dekha To Ye Jaana Sanam' in DDLJ?",
+    "answer": "Kumar Sanu",
+    "options": ["Kumar Sanu", "Udit Narayan", "Abhijeet Bhattacharya"],
+    "difficulty": "easy",
+    "tags": ["90s", "hits"]
+  },
+  {
+    "id": 66,
+    "category": "Bollywood Music",
+    "question": "Which 1990s movie soundtrack features the romantic anthem 'Pehla Nasha'?",
+    "answer": "Jo Jeeta Wahi Sikandar",
+    "options": ["Jo Jeeta Wahi Sikandar", "Dilwale Dulhania Le Jayenge", "Aashiqui"],
+    "difficulty": "medium",
+    "tags": ["90s", "albums"]
+  },
+  {
+    "id": 67,
+    "category": "Bollywood Music",
+    "question": "Who wrote the lyrics for the popular song 'Kabira' from 'Yeh Jawaani Hai Deewani'?",
+    "answer": "Amitabh Bhattacharya",
+    "options": ["Amitabh Bhattacharya", "Gulzar", "Irshad Kamil"],
+    "difficulty": "medium",
+    "tags": ["lyrics", "hits"]
+  },
+  {
+    "id": 68,
+    "category": "Bollywood Music",
+    "question": "Who composed the fresh and youth-centric music for the film 'Dil Chahta Hai'?",
+    "answer": "Shankar-Ehsaan-Loy",
+    "options": ["Shankar-Ehsaan-Loy", "A. R. Rahman", "Vishal-Shekhar"],
+    "difficulty": "easy",
+    "tags": ["composers", "classics"]
+  },
+  {
+    "id": 69,
+    "category": "Bollywood Music",
+    "question": "Which energetic singer performed the track 'Mauja Hi Mauja' in 'Jab We Met'?",
+    "answer": "Mika Singh",
+    "options": ["Mika Singh", "Sukhwinder Singh", "Daler Mehndi"],
+    "difficulty": "easy",
+    "tags": ["dance", "singers"]
+  },
+  {
+    "id": 70,
+    "category": "Bollywood Music",
+    "question": "Who composed the intense and soulful music album for the film 'Rockstar' (2011)?",
+    "answer": "A. R. Rahman",
+    "options": ["A. R. Rahman", "Pritam", "Amit Trivedi"],
+    "difficulty": "easy",
+    "tags": ["rockstar", "rahman"]
+  },
+  {
+    "id": 71,
+    "category": "Bollywood Music",
+    "question": "Which song from the movie 'Gully Boy' popularized the phrase 'Apna Time Aayega'?",
+    "answer": "Apna Time Aayega",
+    "options": ["Apna Time Aayega", "Sher Aaya Sher", "Mere Gully Mein"],
+    "difficulty": "easy",
+    "tags": ["rap", "hits"]
+  },
+  {
+    "id": 72,
+    "category": "Bollywood Music",
+    "question": "Who is the female playback singer of the item song 'Chikni Chameli' from 'Agneepath'?",
+    "answer": "Shreya Ghoshal",
+    "options": ["Shreya Ghoshal", "Sunidhi Chauhan", "Kanika Kapoor"],
+    "difficulty": "easy",
+    "tags": ["dance", "female-singers"]
+  },
+  {
+    "id": 73,
+    "category": "Bollywood Music",
+    "question": "Which legendary music director duo composed the record-breaking songs for 'Aashiqui' (1990)?",
+    "answer": "Nadeem-Shravan",
+    "options": ["Nadeem-Shravan", "Jatin-Lalit", "Anand-Milind"],
+    "difficulty": "medium",
+    "tags": ["90s", "composers"]
+  },
+  {
+    "id": 74,
+    "category": "Bollywood Music",
+    "question": "Who was the main playback singer for the spiritual song 'Kun Faya Kun' alongside A.R. Rahman?",
+    "answer": "Mohit Chauhan",
+    "options": ["Mohit Chauhan", "Javed Ali", "Sukhwinder Singh"],
+    "difficulty": "medium",
+    "tags": ["sufi", "rockstar"]
+  },
+  {
+    "id": 75,
+    "category": "Bollywood Music",
+    "question": "In which movie does the emotional song 'Channa Mereya' feature?",
+    "answer": "Ae Dil Hai Mushkil",
+    "options": ["Ae Dil Hai Mushkil", "Yeh Jawaani Hai Deewani", "Sanju"],
+    "difficulty": "easy",
+    "tags": ["sad-songs", "ranbir"]
+  },
+  {
+    "id": 76,
+    "category": "Bollywood Music",
+    "question": "Who sang the popular romantic duet 'Gerua' alongside Antara Mitra in the film 'Dilwale' (2015)?",
+    "answer": "Arijit Singh",
+    "options": ["Arijit Singh", "Atif Aslam", "Armaan Malik"],
+    "difficulty": "easy",
+    "tags": ["srk", "romance"]
+  },
+  {
+    "id": 77,
+    "category": "Bollywood Music",
+    "question": "Which legendary Bollywood playback singer's real name was Abhas Kumar Ganguly?",
+    "answer": "Kishore Kumar",
+    "options": ["Kishore Kumar", "Mohammed Rafi", "Mukesh"],
+    "difficulty": "medium",
+    "tags": ["legends", "history"]
+  },
+  {
+    "id": 78,
+    "category": "Bollywood Music",
+    "question": "Who composed the unconventional, rustic, and highly acclaimed music for 'Gangs of Wasseypur'?",
+    "answer": "Sneha Khanwalkar",
+    "options": ["Sneha Khanwalkar", "Amit Trivedi", "Ram Sampath"],
+    "difficulty": "hard",
+    "tags": ["composers", "indie"]
+  },
+  {
+    "id": 79,
+    "category": "Bollywood Music",
+    "question": "Which movie features the rustic item song 'Bidi Jalaile' composed by Vishal Bhardwaj?",
+    "answer": "Omkara",
+    "options": ["Omkara", "Kaminey", "Haider"],
+    "difficulty": "medium",
+    "tags": ["songs", "classics"]
+  },
+  {
+    "id": 80,
+    "category": "Bollywood Music",
+    "question": "Who sang the melodious track 'Zindagi Do Pal Ki' for Hrithik Roshan in 'Kites'?",
+    "answer": "KK",
+    "options": ["KK", "Shaan", "Sonu Nigam"],
+    "difficulty": "medium",
+    "tags": ["melodies", "singers"]
+  },
+  {
+    "id": 81,
+    "category": "Technology",
+    "question": "Who co-founded Microsoft Corporation alongside Bill Gates in 1975?",
+    "answer": "Paul Allen",
+    "options": ["Paul Allen", "Steve Ballmer", "Steve Jobs"],
+    "difficulty": "easy",
+    "tags": ["history", "founders"]
+  },
+  {
+    "id": 82,
+    "category": "Technology",
+    "question": "What does the abbreviation 'HTML' stand for?",
+    "answer": "HyperText Markup Language",
+    "options": ["HyperText Markup Language", "HyperText Multi Language", "HighTransfer Machine Language"],
+    "difficulty": "easy",
+    "tags": ["web", "standards"]
+  },
+  {
+    "id": 83,
+    "category": "Technology",
+    "question": "In computer science, what does the acronym 'RAM' stand for?",
+    "answer": "Random Access Memory",
+    "options": ["Random Access Memory", "Read Access Memory", "Run Action Memory"],
+    "difficulty": "easy",
+    "tags": ["hardware", "components"]
+  },
+  {
+    "id": 84,
+    "category": "Technology",
+    "question": "What is the name of the operating system developed by Google for mobile devices?",
+    "answer": "Android",
+    "options": ["Android", "iOS", "Symbian"],
+    "difficulty": "easy",
+    "tags": ["mobile", "google"]
+  },
+  {
+    "id": 85,
+    "category": "Technology",
+    "question": "Who is widely regarded as the father/inventor of the World Wide Web (WWW)?",
+    "answer": "Tim Berners-Lee",
+    "options": ["Tim Berners-Lee", "Vint Cerf", "Alan Turing"],
+    "difficulty": "easy",
+    "tags": ["internet", "history"]
+  },
+  {
+    "id": 86,
+    "category": "Technology",
+    "question": "Which programming language was originally created by James Gosling at Sun Microsystems in 1995?",
+    "answer": "Java",
+    "options": ["Java", "C++", "Python"],
+    "difficulty": "easy",
+    "tags": ["programming", "java"]
+  },
+  {
+    "id": 87,
+    "category": "Technology",
+    "question": "What does 'CPU' stand for in computer systems?",
+    "answer": "Central Processing Unit",
+    "options": ["Central Processing Unit", "Central Program Utility", "Core Processing Unit"],
+    "difficulty": "easy",
+    "tags": ["hardware", "abbreviations"]
+  },
+  {
+    "id": 88,
+    "category": "Technology",
+    "question": "What is the main language used to query and manage relational databases?",
+    "answer": "SQL",
+    "options": ["SQL", "NoSQL", "GraphQL"],
+    "difficulty": "easy",
+    "tags": ["databases", "languages"]
+  },
+  {
+    "id": 89,
+    "category": "Technology",
+    "question": "Who co-founded Apple Inc. alongside Steve Jobs and Ronald Wayne in 1976?",
+    "answer": "Steve Wozniak",
+    "options": ["Steve Wozniak", "Ronald Reagan", "Mike Markkula"],
+    "difficulty": "easy",
+    "tags": ["apple", "founders"]
+  },
+  {
+    "id": 90,
+    "category": "Technology",
+    "question": "What does 'HTTP' stand for in web communication?",
+    "answer": "HyperText Transfer Protocol",
+    "options": ["HyperText Transfer Protocol", "HyperText Tech Protocol", "High Transfer Tech Path"],
+    "difficulty": "easy",
+    "tags": ["protocols", "web"]
+  },
+  {
+    "id": 91,
+    "category": "Technology",
+    "question": "What is the name of the highly popular generative AI chatbot released by OpenAI in November 2022?",
+    "answer": "ChatGPT",
+    "options": ["ChatGPT", "Claude", "Gemini"],
+    "difficulty": "easy",
+    "tags": ["ai", "openai"]
+  },
+  {
+    "id": 92,
+    "category": "Technology",
+    "question": "What does 'IP' stand for in 'IP Address'?",
+    "answer": "Internet Protocol",
+    "options": ["Internet Protocol", "Intranet Path", "Instant Packet"],
+    "difficulty": "easy",
+    "tags": ["networking", "abbreviations"]
+  },
+  {
+    "id": 93,
+    "category": "Technology",
+    "question": "What was the original name of the Google search engine during its research project phase?",
+    "answer": "BackRub",
+    "options": ["BackRub", "PageRank", "WebCrawler"],
+    "difficulty": "medium",
+    "tags": ["google", "history"]
+  },
+  {
+    "id": 94,
+    "category": "Technology",
+    "question": "Which operating system kernel was created by Linus Torvalds as a free hobby project in 1991?",
+    "answer": "Linux",
+    "options": ["Linux", "Unix", "Minix"],
+    "difficulty": "easy",
+    "tags": ["linux", "kernel"]
+  },
+  {
+    "id": 95,
+    "category": "Technology",
+    "question": "What does 'DNS' stand for in networking terms?",
+    "answer": "Domain Name System",
+    "options": ["Domain Name System", "Dynamic Network Service", "Domain Network Security"],
+    "difficulty": "easy",
+    "tags": ["networking", "abbreviations"]
+  },
+  {
+    "id": 96,
+    "category": "Technology",
+    "question": "What is the standard network port number for secure web traffic (HTTPS)?",
+    "answer": "443",
+    "options": ["443", "80", "8080"],
+    "difficulty": "medium",
+    "tags": ["security", "ports"]
+  },
+  {
+    "id": 97,
+    "category": "Technology",
+    "question": "Who is the Indian-born CEO of Alphabet Inc. and Google?",
+    "answer": "Sundar Pichai",
+    "options": ["Sundar Pichai", "Satya Nadella", "Shantanu Narayen"],
+    "difficulty": "easy",
+    "tags": ["ceos", "google"]
+  },
+  {
+    "id": 98,
+    "category": "Technology",
+    "question": "What type of database structure is MongoDB classified as?",
+    "answer": "NoSQL",
+    "options": ["NoSQL", "Relational", "Graph"],
+    "difficulty": "medium",
+    "tags": ["databases", "mongodb"]
+  },
+  {
+    "id": 99,
+    "category": "Technology",
+    "question": "What is the name of the first computer virus created in 1971 that displayed the message 'I'm the creeper, catch me if you can!'?",
+    "answer": "Creeper",
+    "options": ["Creeper", "Elk Cloner", "Brain"],
+    "difficulty": "hard",
+    "tags": ["security", "history"]
+  },
+  {
+    "id": 100,
+    "category": "Technology",
+    "question": "What is the name of the famous encryption algorithm invented by Rivest, Shamir, and Adleman?",
+    "answer": "RSA",
+    "options": ["RSA", "AES", "DES"],
+    "difficulty": "medium",
+    "tags": ["cryptography", "math"]
+  },
+  {
+    "id": 101,
+    "category": "Gaming",
+    "question": "Which sandbox building game is the best-selling video game of all time?",
+    "answer": "Minecraft",
+    "options": ["Minecraft", "Tetris", "Grand Theft Auto V"],
+    "difficulty": "easy",
+    "tags": ["records", "mojang"]
+  },
+  {
+    "id": 102,
+    "category": "Gaming",
+    "question": "Who is the iconic mustache-wearing Italian plumber mascot of Nintendo?",
+    "answer": "Mario",
+    "options": ["Mario", "Luigi", "Wario"],
+    "difficulty": "easy",
+    "tags": ["nintendo", "characters"]
+  },
+  {
+    "id": 103,
+    "category": "Gaming",
+    "question": "In which free-to-play battle royale game do 100 players drop onto an island to build structures and fight to survive?",
+    "answer": "Fortnite",
+    "options": ["Fortnite", "PUBG", "Apex Legends"],
+    "difficulty": "easy",
+    "tags": ["multiplayer", "epic"]
+  },
+  {
+    "id": 104,
+    "category": "Gaming",
+    "question": "What is the name of the fantasy land/kingdom where 'The Legend of Zelda' series is set?",
+    "answer": "Hyrule",
+    "options": ["Hyrule", "Mushroom Kingdom", "Azeroth"],
+    "difficulty": "easy",
+    "tags": ["zelda", "nintendo"]
+  },
+  {
+    "id": 105,
+    "category": "Gaming",
+    "question": "Which futuristic Xbox shooter franchise features the main character Master Chief?",
+    "answer": "Halo",
+    "options": ["Halo", "Gears of War", "Destiny"],
+    "difficulty": "easy",
+    "tags": ["xbox", "sci-fi"]
+  },
+  {
+    "id": 106,
+    "category": "Gaming",
+    "question": "What is the name of the main archaeological female protagonist in the 'Tomb Raider' series?",
+    "answer": "Lara Croft",
+    "options": ["Lara Croft", "Samus Aran", "Jill Valentine"],
+    "difficulty": "easy",
+    "tags": ["adventure", "characters"]
+  },
+  {
+    "id": 107,
+    "category": "Gaming",
+    "question": "What is the best-selling home video game console of all time, selling over 155 million units?",
+    "answer": "PlayStation 2",
+    "options": ["PlayStation 2", "Nintendo DS", "Nintendo Switch"],
+    "difficulty": "easy",
+    "tags": ["hardware", "records"]
+  },
+  {
+    "id": 108,
+    "category": "Gaming",
+    "question": "Which Polish game studio developed the fantasy RPG 'The Witcher 3: Wild Hunt' and 'Cyberpunk 2077'?",
+    "answer": "CD Projekt Red",
+    "options": ["CD Projekt Red", "BioWare", "Bethesda"],
+    "difficulty": "easy",
+    "tags": ["studios", "rpg"]
+  },
+  {
+    "id": 109,
+    "category": "Gaming",
+    "question": "What is the name of the fictional sun-drenched city based on Los Angeles in 'Grand Theft Auto V'?",
+    "answer": "Los Santos",
+    "options": ["Los Santos", "Liberty City", "Vice City"],
+    "difficulty": "easy",
+    "tags": ["gta", "rockstar"]
+  },
+  {
+    "id": 110,
+    "category": "Gaming",
+    "question": "What are the names of the two iconic default skin characters in Minecraft?",
+    "answer": "Steve and Alex",
+    "options": ["Steve and Alex", "Mario and Luigi", "Ash and Misty"],
+    "difficulty": "easy",
+    "tags": ["minecraft", "trivia"]
+  },
+  {
+    "id": 111,
+    "category": "Gaming",
+    "question": "What is the highest competitive rank a player can achieve in 'League of Legends'?",
+    "answer": "Challenger",
+    "options": ["Challenger", "Grandmaster", "Diamond"],
+    "difficulty": "medium",
+    "tags": ["moba", "competitive"]
+  },
+  {
+    "id": 112,
+    "category": "Gaming",
+    "question": "What is the name of the primary antagonist (the giant fire-breathing koopa) in the Super Mario series?",
+    "answer": "Bowser",
+    "options": ["Bowser", "Wario", "Donkey Kong"],
+    "difficulty": "easy",
+    "tags": ["mario", "villains"]
+  },
+  {
+    "id": 113,
+    "category": "Gaming",
+    "question": "Which Japanese studio developed the challenging action RPGs 'Dark Souls', 'Bloodborne', and 'Elden Ring'?",
+    "answer": "FromSoftware",
+    "options": ["FromSoftware", "Capcom", "Square Enix"],
+    "difficulty": "easy",
+    "tags": ["rpg", "souls"]
+  },
+  {
+    "id": 114,
+    "category": "Gaming",
+    "question": "In the classic arcade game 'Pac-Man', what is the name of the red ghost?",
+    "answer": "Blinky",
+    "options": ["Blinky", "Pinky", "Inky"],
+    "difficulty": "medium",
+    "tags": ["arcade", "retro"]
+  },
+  {
+    "id": 115,
+    "category": "Gaming",
+    "question": "Which game engine is developed and owned by Epic Games?",
+    "answer": "Unreal Engine",
+    "options": ["Unreal Engine", "Unity", "Godot"],
+    "difficulty": "easy",
+    "tags": ["tech", "engines"]
+  },
+  {
+    "id": 116,
+    "category": "Gaming",
+    "question": "What year was the original PlayStation console first released in Japan?",
+    "answer": "1994",
+    "options": ["1994", "1995", "1996"],
+    "difficulty": "medium",
+    "tags": ["sony", "history"]
+  },
+  {
+    "id": 117,
+    "category": "Gaming",
+    "question": "What is the name of the tile-matching puzzle game designed by Soviet software engineer Alexey Pajitnov in 1984?",
+    "answer": "Tetris",
+    "options": ["Tetris", "Puyo Puyo", "Dr. Mario"],
+    "difficulty": "easy",
+    "tags": ["retro", "puzzle"]
+  },
+  {
+    "id": 118,
+    "category": "Gaming",
+    "question": "Who is the main protagonist (the demigod 'Ghost of Sparta') in the 'God of War' series?",
+    "answer": "Kratos",
+    "options": ["Kratos", "Zeus", "Atreus"],
+    "difficulty": "easy",
+    "tags": ["playstation", "action"]
+  },
+  {
+    "id": 119,
+    "category": "Gaming",
+    "question": "Which legendary developer created the 'Portal', 'Half-Life', and 'Left 4 Dead' franchises?",
+    "answer": "Valve",
+    "options": ["Valve", "Blizzard", "Bethesda"],
+    "difficulty": "easy",
+    "tags": ["pc", "studios"]
+  },
+  {
+    "id": 120,
+    "category": "Gaming",
+    "question": "In Minecraft, what rare resource found in the Nether must be combined with gold to create the strongest armor tier?",
+    "answer": "Ancient Debris",
+    "options": ["Ancient Debris", "Obsidian", "Nether Quartz"],
+    "difficulty": "medium",
+    "tags": ["minecraft", "crafting"]
+  }
+]
