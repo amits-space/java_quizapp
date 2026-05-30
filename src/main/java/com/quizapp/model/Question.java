@@ -86,4 +86,13 @@ public class Question {
     public void setTags(String tags) {
         this.tags = tags;
     }
+
+    @JsonProperty("tags")
+    public void setTagsFromJson(List<String> tagsList) {
+        if (tagsList != null) {
+            this.tags = String.join(",", tagsList);
+        } else {
+            this.tags = null;
+        }
+    }
 }

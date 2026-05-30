@@ -66,6 +66,19 @@ A responsive, high-fidelity **Java-Servlet Quiz Portal** featuring a lightweight
 
 ## 🚀 Execution & Running Instructions
 
+### ⚡ Recommended: One-Click Automated Startup & Shutdown
+We have included a highly professional, interactive command-line manager utility, `run.bat`, at the root of the project. This utility eliminates the need to manually start database servers or deploy WAR files.
+
+To run the application:
+1. Double-click the **`run.bat`** file in your project folder, or run `.\run.bat` in your terminal.
+2. Select **`[1]`** to perform a full clean-build, boot your portable MySQL server and Apache Tomcat, automatically deploy the `quizapp.war` file, and open the quiz portal in your default browser.
+3. Select **`[2]`** to bypass the Maven build and start the application instantly with the last compiled bundle.
+4. Select **`[3]`** when you are done to gracefully shut down both the Tomcat web server and the MySQL database server, ensuring zero resource leaks or database corruptions!
+
+---
+
+### Manual Deployment (Optional)
+
 ### 1. Build and Compile the Application (WAR file)
 To package the portal into a deployable Web Archive (`WAR`) file, run the local maven wrapper command in your terminal:
 ```powershell

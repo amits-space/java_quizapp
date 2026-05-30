@@ -174,7 +174,8 @@ function setupEventListeners() {
 // ==========================================================================
 
 // Player Name Submission
-function handleNameSubmission() {
+function handleNameSubmission(e) {
+    if (e) e.preventDefault();
     const input = document.getElementById('username-input');
     const errorDiv = document.getElementById('name-error');
     const name = input.value.trim();
@@ -371,7 +372,8 @@ function handleOptionSelection(clickedBtn, selectedValue) {
 // ==========================================================================
 // FREE TEXT FORM SUBMISSION (Rapid Fire Mode)
 // ==========================================================================
-function handleRapidTextSubmission() {
+function handleRapidTextSubmission(e) {
+    if (e) e.preventDefault();
     const input = document.getElementById('rapid-answer-input');
     const val = input.value.trim();
     
