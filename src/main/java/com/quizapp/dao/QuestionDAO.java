@@ -81,4 +81,43 @@ public class QuestionDAO {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Inserts only questions whose question_text does not already exist in the DB.
+     * This allows new questions added to questions.json to be picked up on the next
+     * server startup without re-seeding the entire table.
+     *
+     * @return the number of newly inserted questions
+     */
+    public int insertNewQuestions(List<Question> questions) {
+        String sql = "INSERT IGNORE INTO questions (id, category, question_text, answer_text, options_json, difficulty, tags) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        int inserted = 0;
+        try (Connection conn = ConnectionPool.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            conn.setAutoCommit(false);
+            for (Question q : questions) {
+                ps.setInt(1, q.getId());
+                ps.setString(2, q.getCategory());
+                ps.setString(3, q.getQuestionText());
+                ps.setString(4, q.getAnswerText());
+                ps.setString(5, JsonUtils.toJson(q.getOptions()));
+                ps.setString(6, q.getDifficulty());
+                ps.setString(7, q.getTags());
+                ps.addBatch();
+            }
+            int[] results = ps.executeBatch();
+            conn.commit();
+            for (int r : results) {
+                if (r > 0) inserted++;
+            }
+            if (inserted > 0) {
+                System.out.println("Inserted " + inserted + " new question(s) from questions.json.");
+            } else {
+                System.out.println("No new questions to insert — database is already up to date.");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return inserted;
+    }
 }

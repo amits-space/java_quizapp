@@ -66,36 +66,40 @@ public class DatabaseInitializer implements ServletContextListener {
 
     private void seedQuestionsIfEmpty() {
         QuestionDAO questionDAO = new QuestionDAO();
-        int count = questionDAO.getQuestionCount();
-        System.out.println("Current question count in database: " + count);
-        
-        if (count == 0) {
-            System.out.println("Questions table is empty. Seeding from questions.json...");
-            InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream("data/questions/questions.json");
-            if (input == null) {
-                input = DatabaseInitializer.class.getClassLoader().getResourceAsStream("data/questions/questions.json");
+        System.out.println("Syncing questions from questions.json to database...");
+
+        // Clear the table to ensure any added/modified/deleted questions are fully synchronized
+        try (Connection conn = ConnectionPool.getConnection();
+             Statement stmt = conn.createStatement()) {
+            stmt.executeUpdate("DELETE FROM questions");
+            System.out.println("Cleared existing questions table to perform clean synchronization from questions.json.");
+        } catch (Exception e) {
+            System.err.println("Warning: Failed to clear questions table before syncing: " + e.getMessage());
+        }
+
+        InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream("data/questions/questions.json");
+        if (input == null) {
+            input = DatabaseInitializer.class.getClassLoader().getResourceAsStream("data/questions/questions.json");
+        }
+        if (input == null) {
+            input = DatabaseInitializer.class.getResourceAsStream("/data/questions/questions.json");
+        }
+
+        if (input == null) {
+            System.err.println("Error: questions.json not found in classpath! Unable to seed.");
+            return;
+        }
+
+        try (InputStream autoCloseInput = input) {
+            List<Question> questions = JsonUtils.fromJson(autoCloseInput, new TypeReference<List<Question>>() {});
+            if (questions != null && !questions.isEmpty()) {
+                questionDAO.insertNewQuestions(questions);
+            } else {
+                System.err.println("Warning: parsed questions list is empty or null.");
             }
-            if (input == null) {
-                input = DatabaseInitializer.class.getResourceAsStream("/data/questions/questions.json");
-            }
-            
-            if (input == null) {
-                System.err.println("Error: questions.json not found in classpath! Unable to seed.");
-                return;
-            }
-            
-            try (InputStream autoCloseInput = input) {
-                List<Question> questions = JsonUtils.fromJson(autoCloseInput, new TypeReference<List<Question>>() {});
-                if (questions != null && !questions.isEmpty()) {
-                    questionDAO.insertQuestions(questions);
-                    System.out.println("Successfully seeded " + questions.size() + " questions in the database.");
-                } else {
-                    System.err.println("Warning: parsed questions list is empty or null.");
-                }
-            } catch (Exception e) {
-                System.err.println("Error seeding questions: " + e.getMessage());
-                e.printStackTrace();
-            }
+        } catch (Exception e) {
+            System.err.println("Error seeding questions: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 
